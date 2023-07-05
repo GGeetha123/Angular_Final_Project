@@ -1,0 +1,266 @@
+{
+  "users": [
+    {
+      "email": "lorenzo@gmail.com",
+      "password": "$2a$10$iUC9zu6I5JKIqFFpozcJG..l6pJS84SHuyukvuNktBe3ikUFgY4EW",
+      "_password": "lorenzo@123",
+      "username": "lorenzo",
+      "type": "user",
+      "id": 6
+    },
+    {
+        "email": "admin@gmail.com",
+        "password": "$2a$10$iUC9zu6I5JKIqFFpozcJG..l6pJS84SHuyukvuNktBe3ikUFgY4EW",
+        "_password": "lorenzo@123",
+        "username": "admin",
+        "type": "admin",
+        "id": 7
+    }
+  ],
+  "productcategory":[
+    {
+        "id":1,
+        "name":"Gold"
+    },
+    {
+        "id":2,
+        "name":"Diamond"
+    },
+    {
+        "id":3,
+        "name":"Silver"
+    },
+    {
+        "id":4,
+        "name":"Platinum"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Exuberant Carved Balls Gold",
+      "productcategoryid":1,
+      "mrp": 100051,
+      "price":90002,
+      "reviewscount":9,
+      "averagerating":5.0,
+      "images":["1.jpg"],
+      "colours":["Classic Black","Aqua Blue","Sea Green"],
+      "storage":["BIS Hallmark Jewellery"],
+      "features":[ ],
+      "tags":["3% off"],
+      "description": "Exuberant Carved Balls Gold Necklace",
+      "availableqty": 100
+    },
+    {
+        "id": 2,
+        "name": "Opulent Mini Box Gold Chain",
+        "productcategoryid":1,
+        "mrp": 40767,
+        "price":38767,
+        "reviewscount":68,
+        "averagerating":5.0,
+        "images":["2.jpg"],
+        "colours":["Classic Black","Aqua Blue","Sea Green"],
+        "storage":["Life Time Exchange"],
+        "features":[ ],
+        "tags":["5% off"],     
+        "description": "Opulent Mini Box Gold Chain",
+        "availableqty": 100
+    },
+    {
+    "id": 3,
+    "name": "Attractive Twisted Gold Chain",
+    "productcategoryid":1,
+    "mrp": 14999,
+    "price":9999,
+    "reviewscount":242,
+    "averagerating":4.9,
+    "images":["3.jpg"],
+    "colours":["Matte Black","Mint Green","Lavender Purple","Royal Blue"],
+    "storage":["30 days return"],
+    "features":[ ],
+    "tags":["5% off"],
+    "description": "Attractive Twisted Gold Chain",
+    "availableqty": 100
+    },
+    {
+        "id": 4,
+        "name": "Impressive Tri Petal Floral Gold",
+        "productcategoryid":1,
+        "mrp": 108999,
+        "price":104999,
+        "reviewscount":48,
+        "averagerating":4.9,
+        "images":["4.jpg"],
+        "colours":["Lunar Black","Sunrise Gold","Ice Blue"],
+        "storage":["Life Time Exchange"],
+        "features":[ ],
+        "tags":["2% off"],     
+        "description": "Impressive Tri Petal Floral Gold Necklace",
+        "availableqty": 100
+    },
+    {
+        "id": 5,
+        "name": "Stunning Triple Layer Beaded Gold",
+        "productcategoryid":1,
+        "mrp": 203999,
+        "price":192999,
+        "reviewscount":457,
+        "averagerating":5.0,
+        "images":["5.jpg"],
+        "colours":["Stardust Purple","Onyx Black","Glacier Blue"],
+        "storage":["BIS Hallmark Jewellery"],
+        "features":[ ],
+        "tags":["4% off"],     
+        "description": "Stunning Triple Layer Beaded Gold Necklace",
+        "availableqty": 100
+    },
+    {
+        "id": 6,
+        "name": "Modern Triple Square Gold Necklace",
+        "productcategoryid":1,
+        "mrp": 99999,
+        "price":95999,
+        "reviewscount":334,
+        "averagerating":5.0,
+        "images":["6.jpg"],
+        "colours":["Obsidian Black","Iceberg Blue","Arctic white"],
+        "storage":["30 days return"],
+        "features":[ ],
+        "tags":["6% off"],     
+        "description": "Modern Triple Square Gold Necklace - Trinka Collection",
+        "availableqty": 100
+    },
+    {
+        "id": 7,
+        "name": "Traditional Multi Stone Peacock Gold",
+        "productcategoryid":1,
+        "mrp": 190999,
+        "price":160999,
+        "reviewscount":307,
+        "averagerating":4.9,
+        "images":["7.jpg"],
+        "colours":["Mystique Blue","Matte Black","Frosted Green"],
+        "storage":["Life Time Exchange"],
+        "features":[ ],
+        "tags":["5% off"],     
+        "description": "Traditional Multi Stone Peacock Gold Necklace",
+        "availableqty": 100
+    },
+    {
+        "id": 8,
+        "name": "Imperial Circular Pear Drop Gold",
+        "productcategoryid":1,
+        "mrp": 99299,
+        "price":82399,
+        "reviewscount":68,
+        "averagerating":5.0,
+        "images":["8.jpg"],
+        "colours":["Light Green","Light Blue","Black"],
+        "storage":["Life Time Exchange"],
+        "features":[ ],
+        "tags":["7% off"],     
+        "description": "Imperial Circular Pear Drop Gold",
+        "availableqty": 100
+    }
+  ],
+  "Banner":[
+    {
+        "id":1,
+        "title":"Prime 5G 11",
+        "tag":"Special Exchange Bonus of Up to ₹2000",
+        "image":"homeImage_1.jpg",
+        "price":29999,
+        "mrp":33999
+    },
+    {
+        "id":2,
+        "title":"Note 12 Pro 5G",
+        "tag":"Special Exchange Bonus of Up to ₹2500",
+        "image":"homeImage_2.jpg",
+        "price":23999,
+        "mrp":27999
+    },
+    {
+        "id":3,
+        "title":"Note 12 Pro+ 5G",
+        "tag":"Special Exchange Bonus of Up to ₹4000",
+        "image":"homeImage_3.jpg",
+        "price":29999,
+        "mrp":33999
+    },
+    {
+      "id":4,
+      "title":"Note 12 Pro+ 5G",
+      "tag":"Special Exchange Bonus of Up to ₹4000",
+      "image":"homeImage_4.jpg",
+      "price":29999,
+      "mrp":33999
+  },
+  {
+    "id":5,
+    "title":"Note 12 Pro+ 5G",
+    "tag":"Special Exchange Bonus of Up to ₹4000",
+    "image":"homeImage_5.jpg",
+    "price":29999,
+    "mrp":33999
+}
+  ],
+  "colorsList": [
+    {
+      "id": 1,
+      "name": "Sea Green"
+    },
+    {
+      "id": 2,
+      "name": "Aqua Blue"
+    },
+    {
+      "id": 3,
+      "name": "Classic Black"
+    }
+  ],
+  "imagesList": [
+    {
+      "id": 1,
+      "name": "9a811e076ef614fbcaee5d63702d6dbe.jpg"
+    },
+    {
+      "id": 2,
+      "name": "b0dc5c0db2210cb0aadab5f6230edf95.jpg"
+    },
+    {
+      "id": 3,
+      "name": "b843c76240269154564178470ed0a177.jpg"
+    }
+  ],
+  "storageList": [
+    {
+      "id": 1,
+      "name": "BIS Hallmark Jewellery"
+    },
+    {
+      "id": 2,
+      "name": "Life Time Exchange"
+    },
+    {
+      "id": 3,
+      "name": "30 days return"
+    }
+  ],
+  "featuresList": [
+    {
+      "id": 1,
+      "name": "The Redmi A2+ is designed to perform all the essential tasks for you to stay connected, and productive!"
+    },
+    {
+      "id": 2,
+      "name": "Unique leather pattern finish on the back of Redmi A2 not only provides a comfortable grip but also makes it a fashion statement"
+    },
+    {
+      "id": 3,
+      "name": "Powerful octa-core chipset based on 12nm process let's you do more of everything smoothly without any lags or hangs"
+    }
+  ]
+}

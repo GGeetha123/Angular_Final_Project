@@ -1,0 +1,53 @@
+<div class="product__item">    
+    <table width="100%" height="100%" cellpadding="0" cellspacing="0" style="background-color: white;">
+    <tr>
+        <td class="item__marketing-tags">
+            <table>
+                <tr>
+                    <td>
+                        <ul class="tag-list">
+                            <li *ngFor="let tag of product.tags;let i=index" [ngClass]="{'tag-green':i==0, 'tag-orange':i==1}" style="list-style: none;margin:4px;">{{tag}}</li>
+                        </ul>
+                    </td>
+                    <ng-container *ngIf="isAdminUser">
+                        <td width="10%">
+                            <span><img src="../assets/images/edit_icon.png" style="width:40px;height:40px;align-content: right;margin-right:10px;" title="Edit product"></span>
+                        </td>
+                    </ng-container>
+                </tr>
+            </table>            
+        </td>        
+    </tr>
+    <tr>
+        <td style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;font-weight: 700;padding-top:10px;padding-bottom: 10px;">
+            {{product.name}}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span style="font-weight: bold;font-size: 22px;">{{product.price | currency:'INR':'symbol':'1.0-0'}}</span>
+            <span style="margin-left: 10px;font-size: 16px;color:#999;text-decoration: line-through;">{{product.mrp | currency:'INR':'symbol':'1.0-0'}}</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br>
+            <span><button mat-stroked-button color="primary">Buy now</button></span>
+            <span style="margin-left:20px"><button mat-flat-button color="warn">More details</button></span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="../assets/images/gold/{{product.images[0]}}" [alt]="product.name" width="300px" height="300px">
+        </td>
+    </tr>
+   
+    <tr>
+        <td>
+            <ul class="version-selector">
+                <li *ngFor="let version of product.storage" class="version-item">{{version}}</li>
+            </ul>
+        </td>
+    </tr>
+    </table>
+</div>

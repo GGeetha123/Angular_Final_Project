@@ -1,0 +1,18 @@
+<mat-toolbar id="main-menu" color = "warn">
+    <img src="../assets/images/logo.JPG" height="50px" width="50px" alt="Geetha">&nbsp;
+    <span class="app-title">GG jewellers</span>
+    <ul>
+        <li><a routerLink="/user/home">Home</a></li>
+        <li><a routerLink="/user/gold">Gold</a></li>
+        <li><a routerLink="/">Diamond</a></li>
+        <li><a routerLink="/">Silver</a></li>
+        <li><a routerLink="/">Platinum</a></li>
+    </ul>
+    <span class="css-spacer"></span>
+	<span flex></span>
+    <div>
+        <span style="vertical-align: text-bottom;">({{userName | titlecase}})</span>
+        <img src="../assets/images/{{userIconSrc}}" style="height:40px;width:40px;position:sticky;display: inline;" alt="Dedalus">
+        <button mat-button (click)="logout()" style="vertical-align: text-bottom;">Logout</button>
+    </div>
+</mat-toolbar>

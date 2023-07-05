@@ -1,0 +1,139 @@
+.product__item {    
+    align-items: center;
+    background-color: #fff;    
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    padding-bottom: 36px;
+    padding-top: 36px;
+    position: relative;
+    transition: box-shadow .25s ease;
+    width: 360px;
+    box-shadow: 5px 5px 10px lightgrey;
+    border-radius: 12px;
+    
+}
+
+.producttitle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+
+.item__marketing-tags{    
+    box-sizing: border-box;
+    left: 0;
+    padding: 0 18px;    
+    right: auto;
+    top: 18px;
+    width: 100%;
+    padding-inline-start:18px;
+}
+
+.tag-green{
+    border-radius: 6px;
+    height: auto;
+    line-height: 1.25;
+    padding:4px 12px;
+    background-color: rgba(255, 128, 0, 0.454);
+    border: 1px solid rgba(255, 128, 0, 0.989);
+    color: black;
+    font-size: 16px;
+}
+
+.tag-orange{
+    border-radius: 6px;
+    height: auto;
+    line-height: 1.25;
+    padding:4px 12px;
+    background-color: #ff69001a;
+    border: 1px solid #ff6900;
+    color: #ff6900;
+    font-size: 16px;
+}
+
+.tag-list{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-inline-start:0px;
+}
+
+.thumb-list{
+    text-align: center;
+    transition: margin-left .2s linear 0s;
+    white-space: nowrap;
+    list-style: none;
+    padding-inline-start:0px;
+}
+
+.thumb-item{
+    cursor: pointer;
+    display: inline-block;
+    transition: border-color .2s linear;
+    vertical-align: bottom;
+    margin-right: 10px;
+
+    height: 1.95312vw;
+    margin-inline-end: 0.89844vw;
+    width: 1.95312vw;
+
+    list-style: none;
+}
+
+.clip-image{
+    display: inline-block;
+    position: relative;
+    height: 1.95312vw;
+    width: 1.95312vw;    
+}
+
+.clip-image__border {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.version-selector{
+    --ms-overflow-style: none;
+    color: #898989;    
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start:0px;
+}
+
+.version-item{
+    align-items: center;
+    cursor: pointer;
+    display: flex;   
+    font-size: 75%;
+    list-style: none;       
+}
+
+.product__item table td{
+    text-align: center;
+}
+
+.version-item:not(:last-child)::after{
+    height:16px;  
+}
+
+.version-item:not(:last-child)::after{
+    background-color: #2c0ce2;
+    content: "";
+    width: 1px;
+    margin-left:12px;
+    margin-right: 12px;    
+}

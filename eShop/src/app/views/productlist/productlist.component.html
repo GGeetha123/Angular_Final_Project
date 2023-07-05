@@ -1,0 +1,17 @@
+<div class="product-catalogue">
+    <div>
+        <h2 class="ph-h2">Gold</h2>
+        
+    </div>
+    <mat-divider style="margin-bottom: 10px;"></mat-divider>
+    <div style="display:flex;justify-content: right;margin-right:20px" *ngIf="isAdminUser">
+        <button mat-raised-button color="accent" (click)="addNewProduct()">Add new product</button>
+    </div>
+    <div class="ph-catalog_container">
+        <ul class="ph-product_list">
+            <li style="list-style: none;display: flex;" *ngFor="let prod of products">
+                <app-product [product]="prod"></app-product>
+            </li>
+        </ul>
+    </div>
+</div>

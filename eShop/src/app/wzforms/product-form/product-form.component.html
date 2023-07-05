@@ -1,0 +1,90 @@
+<h2 mat-dialog-title>New Jewellery item</h2>
+<mat-dialog-content [formGroup]="form">
+<div class="rform">    
+    <!-- <mat-form-field> -->
+    <table>
+        <tr>
+            <td class="item-label"> Name </td>
+            <td><input type="text" class="medium-input" [(ngModel)]="name" [ngModelOptions]="{standalone: true}"></td>
+        </tr>
+        <tr>
+            <td class="item-label">Category </td>
+            <td>
+                <select class="medium-input" [(ngModel)]="productcategoryid" [ngModelOptions]="{standalone: true}">
+                    <option *ngFor="let x of productCatArray" [value]="x.id">{{x.name}}</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="item-label"> MRP </td>
+            <td><input type="text" class="medium-input" [(ngModel)]="mrp" [ngModelOptions]="{standalone: true}"></td>
+        </tr>
+
+        <tr>
+            <td class="item-label"> Price </td>
+            <td><input type="text" class="medium-input" [(ngModel)]="price" [ngModelOptions]="{standalone: true}"></td>
+        </tr>
+        
+        <tr>
+            <td class="item-label"> Description </td>
+            <td><textarea class="large-input" [(ngModel)]="description" [ngModelOptions]="{standalone: true}"></textarea></td>
+        </tr>
+
+        <tr>
+            <td class="item-label"> Available Quantity </td>
+            <td><input type="text" class="medium-input" [(ngModel)]="availableqty" [ngModelOptions]="{standalone: true}"></td>
+        </tr>
+
+
+        <tr>
+            <td class="item-label"> Images </td>
+            <td>
+                <ng-multiselect-dropdown
+                [placeholder]="'custom placeholder'"
+                [settings]="dropdownSettings"
+                 [data]="productImgListArray"
+                 [(ngModel)]="images"
+                (onSelect)="onImageItemSelect($event)"
+                 (onSelectAll)="onImageSelectAll($event)"
+                 [ngModelOptions]="{standalone: true}"
+                 >
+            </ng-multiselect-dropdown>
+            </td>
+        </tr>
+
+      
+
+        <tr>
+            <td class="item-label">Assurance detail </td>
+            <td>
+                <ng-multiselect-dropdown
+                [placeholder]="'custom placeholder'"
+                [settings]="dropdownSettings"
+                 [data]="productStorageListArray"
+                 [(ngModel)]="storage"
+                (onSelect)="onStorageItemSelect($event)"
+                 (onSelectAll)="onStorageSelectAll($event)"
+                 [ngModelOptions]="{standalone: true}"
+                 >
+            </ng-multiselect-dropdown>
+            </td>
+        </tr>
+      
+        <!-- <tr>
+            <td style="text-align: center;" colspan="2">
+                <button mat-raised-button color="primary" type="button" (click)="postProduct()">Save Product</button>
+            </td>
+        </tr> -->
+
+
+
+    </table>
+<!-- </mat-form-field> -->
+    
+</div>
+</mat-dialog-content>
+<mat-dialog-actions style="justify-content: right;">
+    <button class="mat-raised-button" (click)="close()"  style="margin-right:20px;">Close</button>
+    <button class="mat-raised-button mat-warn"(click)="save()" >Save</button>
+</mat-dialog-actions>

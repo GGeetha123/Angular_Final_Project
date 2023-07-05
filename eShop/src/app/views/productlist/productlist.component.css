@@ -1,0 +1,63 @@
+.ph-h2{
+    font-size: 36px;
+    line-height: 40px;
+    padding-left: 30px;
+}
+
+.product-catalogue {   
+    background: #f7f7f7;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.condition-list{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 0 32px;
+}
+
+.condition-list li{
+    color: #898989;    
+    cursor: pointer;
+    margin-inline-end: 40px;
+    list-style: none;
+}
+
+.condition-list li:hover{
+    color: #ff6900;
+}
+
+.condition-list__separator{
+    background: #191919;    
+    cursor: unset;
+    height: 20px;
+    width: 1px;
+}
+
+.checkbox__icon {
+    font-size: 24px;
+    margin-right: 8px;
+    line-height: 1;
+    font-family: micon !important;
+}
+
+.ph-catalog_container
+{
+    display: flex;
+    flex: 1 1;
+    flex-flow: column nowrap;    
+}
+
+.ph-product_list {
+    grid-gap: 12px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(5,minmax(0,1fr));
+    margin: 12px;    
+    padding:0;
+}
